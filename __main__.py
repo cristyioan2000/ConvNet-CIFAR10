@@ -138,7 +138,7 @@ def _save_policy_(model,epoch,optimizer):
       checkpoint = {
       'model': model,
       'state_dict': model.state_dict(),
-      'optimizer':optimizer.state_dict(),
+      'optimizer_state':optimizer.state_dict(),
       'epoch':epoch,
       'optimizer': optimizer,
       'loss':loss
